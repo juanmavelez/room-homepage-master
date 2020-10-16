@@ -1,0 +1,57 @@
+h1,
+h2 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.header {
+  width: 60vw;
+}
+
+.header__logo__container {
+  position: absolute;
+  left: 7rem;
+  bottom: -5rem;
+}
+.header__hamburger__container,
+.header__nav__close__container {
+  display: none;
+}
+
+.header__nav {
+  margin-top: 0.5rem;
+  background-color: transparent;
+}
+
+.header__nav__element a {
+  color: var(--Color1);
+}
+
+.slider {
+  right: 31.5%;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 65% 35%;
+}
+
+.section__figure__container {
+  height: 53.4rem;
+  width: 100%;
+  grid-column: 1/2;
+}
+
+.section__content {
+  width: 80%;
+  grid-column: 2/3;
+  margin: 10rem 10%;
+}
+
+.section__arrow__container {
+  margin-left: 0;
+}
+
+.section__arrow__container p {
+  color: var(--Color4);
+}
