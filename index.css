@@ -36,9 +36,6 @@ body,
   margin: 0;
 }
 
-button:hover {
-  box-shadow: 0px 1px 16px 10px var(--Color2);
-}
 button {
   border: none;
 }
@@ -66,10 +63,10 @@ button {
   width: 4rem;
   height: 4rem;
 }
-
+/* In the js we change the display to flex */
 .header__nav {
   width: 100%;
-  display: flex;
+  display: none;
   position: absolute;
   top: -2rem;
   background-color: var(--Color1);
@@ -96,21 +93,18 @@ button {
 .slider {
   background-color: var(--Color4);
   position: absolute;
-  bottom: 24rem;
+  bottom: 44rem;
   right: 0;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
-
+.slider--left:hover,
+.slider--right:hover,
 .slider--left:focus,
 .slider--right:focus {
   border: none;
   appearance: none;
-  box-shadow: 0px 1px 16px 10px var(--Color2);
+  outline: 0;
+  background: var(--Color3);
 }
 
 .slider--left,
@@ -133,6 +127,9 @@ button {
   width: 100%;
 }
 
+#section__1 {
+  display: block;
+}
 #section__2,
 #section__3 {
   display: none;
@@ -151,7 +148,7 @@ button {
   height: 100%;
 }
 
-.section__content p {
+.section__content--main {
   line-height: 2em;
   font-size: 1.2rem;
   color: var(--Color2);
@@ -161,7 +158,14 @@ button {
   display: flex;
   text-transform: uppercase;
   letter-spacing: 1rem;
-  margin: 3rem;
+  color: var(--Color4);
+}
+
+.section__arrow__container:hover {
+  color: var(--Color3);
+}
+.section__arrow_action {
+  color: var(--Color4);
 }
 
 /*       SECONDARY SECTION       */
