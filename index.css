@@ -52,7 +52,7 @@ button {
   position: absolute;
   left: 45vw;
   right: 45vw;
-  bottom: 0.6rem;
+  bottom: 1.9rem;
   margin: auto;
 }
 
@@ -61,7 +61,7 @@ button {
   background-color: transparent;
   border: none;
   width: 4rem;
-  height: 4rem;
+  height: 7rem;
 }
 /* In the js we change the display to flex */
 .header__nav {
