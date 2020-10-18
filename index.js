@@ -1,9 +1,8 @@
 /* Used for the nav function*/
 const burgerNavbutton = document.getElementsByClassName('header__hamburger__container');
 const closeNavButton = document.getElementsByClassName('header__nav__close__container');
-const main = document.getElementsByClassName('header__nav');
-const header = document.getElementsByClassName('header');
-const body = document.getElementsByClassName('body');
+const headerNav = document.getElementsByClassName('header__nav');
+const main = document.getElementsByClassName('main');
 
 /* variables used for the slider function*/
 const sliderLeft = document.getElementsByClassName('slider--left');
@@ -13,11 +12,9 @@ const sliderRight = document.getElementsByClassName('slider--right');
  * Opens the Nav once the user clicks the burger
  */
 const openNav = () => {
-  header[0].style.display = 'flex';
-  body[0].style.background = 'rgba(0, 0, 0, 0.65)';
-  body[0].style.filter = 'brightness(0.4)';
-  header[0].style.background = 'white';
-  header[0].style.filter = 'brightness(1)';
+  nav[0].style.display = 'flex';
+  main[0].style.background = 'rgba(0, 0, 0, 0.65)';
+  main[0].style.filter = 'brightness(0.4)';
   burgerNavbutton[0].style.display = 'none';
   burgerNavbutton[0].removeEventListener('click', openNav, false);
   closeNavButton[0].addEventListener('click', closeNav, false);
@@ -27,10 +24,10 @@ const openNav = () => {
  * Closes the nav once the user clicks the close icon
  */
 const closeNav = () => {
-  header[0].style.display = 'none';
+  nav[0].style.display = 'none';
   burgerNavbutton[0].style.display = 'block';
-  body[0].style.background = 'rgba(255,255,255,1)';
-  body[0].style.filter = 'brightness(1)';
+  main[0].style.filter = 'brightness(1)';
+  main[0].style.background = 'rgba(255, 255, 255, 1)';
   closeNavButton[0].removeEventListener('click', closeNav, false);
   burgerNavbutton[0].addEventListener('click', openNav, false);
 };
