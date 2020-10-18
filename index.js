@@ -1,7 +1,7 @@
 /* Used for the nav function*/
 const burgerNavbutton = document.getElementsByClassName('header__hamburger__container');
 const closeNavButton = document.getElementsByClassName('header__nav__close__container');
-const header = document.getElementsByClassName('header__nav');
+const main = document.getElementsByClassName('header__nav');
 const body = document.getElementsByClassName('body');
 
 /* variables used for the slider function*/

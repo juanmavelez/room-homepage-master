@@ -94,7 +94,7 @@ button {
 .slider {
   background-color: var(--Color4);
   position: absolute;
-  bottom: 44rem;
+  top: 31rem;
   right: 0;
   align-items: center;
 }
