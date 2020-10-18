@@ -22,6 +22,7 @@ h3 {
 }
 
 .header__nav {
+  display: block;
   width: 25vw;
   padding-left: 15rem;
   margin-top: 0.5rem;

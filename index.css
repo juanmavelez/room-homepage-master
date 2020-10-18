@@ -68,6 +68,7 @@ button {
   width: 100%;
   display: none;
   position: absolute;
+  z-index: 2;
   top: -2rem;
   background-color: var(--Color1);
 }
@@ -105,6 +106,7 @@ button {
   appearance: none;
   outline: 0;
   background: var(--Color3);
+  border-radius: 0.5rem;
 }
 
 .slider--left,
@@ -128,7 +130,7 @@ button {
 }
 
 #section__1 {
-  display: block;
+  display: grid;
 }
 #section__2,
 #section__3 {
@@ -158,10 +160,9 @@ button {
   display: flex;
   text-transform: uppercase;
   letter-spacing: 1rem;
-  color: var(--Color4);
 }
 
-.section__arrow__container:hover {
+.section__arrow__container:focus {
   color: var(--Color3);
 }
 .section__arrow_action {
