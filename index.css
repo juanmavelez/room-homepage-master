@@ -46,6 +46,7 @@ button {
   margin: 2rem auto auto auto;
   position: absolute;
   top: 0;
+  z-index: 2;
 }
 
 .header__logo__container {
@@ -68,7 +69,6 @@ button {
   width: 100%;
   display: none;
   position: absolute;
-  z-index: 2;
   top: -2rem;
   background-color: var(--Color1);
 }
