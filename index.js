@@ -12,7 +12,7 @@ const sliderRight = document.getElementsByClassName('slider--right');
  * Opens the Nav once the user clicks the burger
  */
 const openNav = () => {
-  nav[0].style.display = 'flex';
+  headerNav[0].style.display = 'flex';
   main[0].style.background = 'rgba(0, 0, 0, 0.65)';
   main[0].style.filter = 'brightness(0.4)';
   burgerNavbutton[0].style.display = 'none';
@@ -24,7 +24,7 @@ const openNav = () => {
  * Closes the nav once the user clicks the close icon
  */
 const closeNav = () => {
-  nav[0].style.display = 'none';
+  headerNav[0].style.display = 'none';
   burgerNavbutton[0].style.display = 'block';
   main[0].style.filter = 'brightness(1)';
   main[0].style.background = 'rgba(255, 255, 255, 1)';
